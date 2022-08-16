@@ -19,7 +19,7 @@ final class Module_ZIP extends GDO_Module
     ##############
     ### Module ###
     ##############
-    public function hrefAdministration() : ?string { return $this->href('Admin'); }
+    public function href_administrate_module() : ?string { return $this->href('Admin'); }
     public function onLoadLanguage() : void { $this->loadLanguage('lang/zip'); }
 
     ###############
