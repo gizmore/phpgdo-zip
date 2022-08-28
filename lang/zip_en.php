@@ -1,4 +1,5 @@
 <?php
+namespace GDO\ZIP\lang;
 return [
     'mt_zip_admin' => 'ZIP Detection',
     'detect_zip' => 'Detect',
