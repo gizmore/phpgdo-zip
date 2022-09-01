@@ -11,8 +11,8 @@ use GDO\ZIP\Method\Admin;
  * If detector is not working for your windows box try `where zip` in a cmdline and use that value.
  * 
  * @author gizmore
- * @version 6.10
- * @since 6.10
+ * @version 7.0.1
+ * @since 6.10.0
  */
 final class Module_ZIP extends GDO_Module
 {
@@ -36,11 +36,11 @@ final class Module_ZIP extends GDO_Module
     public function getConfig() : array
     {
         return [
-            GDT_Path::make('gzip_binary')->initial('gzip')->existingFile(),
-            GDT_Path::make('zip_binary')->initial('zip')->existingFile(),
+            GDT_Path::make('zip_binary')->existingFile(),
+            GDT_Path::make('gzip_binary')->existingFile(),
         ];
     }
-    public function cfgGZipPath() { return $this->getConfigVar('gzip_binary'); }
-    public function cfgZipPath() { return $this->getConfigVar('zip_binary'); }
+    public function cfgZipPath() : string { return $this->getConfigVar('zip_binary'); }
+    public function cfgGZipPath() : string { return $this->getConfigVar('gzip_binary'); }
     
 }
