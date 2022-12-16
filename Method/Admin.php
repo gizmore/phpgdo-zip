@@ -35,7 +35,6 @@ final class Admin extends MethodForm
         if ($path = Process::commandPath("zip"))
         {
             Module_ZIP::instance()->saveConfigVar('zip_binary', $path);
-            $this->message('msg_zip_detected');
         }
         else
         {
@@ -45,7 +44,6 @@ final class Admin extends MethodForm
         if ($path = Process::commandPath("gzip"))
         {
             Module_ZIP::instance()->saveConfigVar('gzip_binary', $path);
-            $this->message('msg_gzip_detected');
         }
         else
         {
