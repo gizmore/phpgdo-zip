@@ -11,7 +11,7 @@ use GDO\ZIP\Method\Admin;
  * If detector is not working for your windows box try `where zip` in a cmdline and use that value.
  * 
  * @author gizmore
- * @version 7.0.1
+ * @version 7.0.2
  * @since 6.10.0
  */
 final class Module_ZIP extends GDO_Module
