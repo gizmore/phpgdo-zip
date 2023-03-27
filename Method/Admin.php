@@ -3,6 +3,7 @@ namespace GDO\ZIP\Method;
 
 use GDO\Admin\MethodAdmin;
 use GDO\CLI\Process;
+use GDO\Core\GDT;
 use GDO\Form\GDT_AntiCSRF;
 use GDO\Form\GDT_Form;
 use GDO\Form\GDT_Submit;
@@ -27,7 +28,7 @@ final class Admin extends MethodForm
 		$form->actions()->addField(GDT_Submit::make()->label('detect_zip'));
 	}
 
-	public function formValidated(GDT_Form $form)
+	public function formValidated(GDT_Form $form): GDT
 	{
 		$this->detectBinaries();
 	}
