@@ -4,6 +4,7 @@ namespace GDO\ZIP\Method;
 use GDO\Admin\MethodAdmin;
 use GDO\CLI\Process;
 use GDO\Core\GDT;
+use GDO\Core\GDT_Response;
 use GDO\Form\GDT_AntiCSRF;
 use GDO\Form\GDT_Form;
 use GDO\Form\GDT_Submit;
@@ -31,6 +32,7 @@ final class Admin extends MethodForm
 	public function formValidated(GDT_Form $form): GDT
 	{
 		$this->detectBinaries();
+		return GDT_Response::make();
 	}
 
 	public function detectBinaries()
