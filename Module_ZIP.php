@@ -10,7 +10,7 @@ use GDO\ZIP\Method\Admin;
  * Detector in admin function.
  * If detector is not working for your windows box try `where zip` in a cmdline and use that value.
  *
- * @version 7.0.2
+ * @version 7.0.3
  * @since 6.10.0
  * @author gizmore
  */
