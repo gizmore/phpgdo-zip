@@ -20,6 +20,8 @@ final class Module_ZIP extends GDO_Module
 	##############
 	### Module ###
 	##############
+	public int $priority = 40;
+	
 	public function href_administrate_module(): ?string { return $this->href('Admin'); }
 
 	public function onLoadLanguage(): void { $this->loadLanguage('lang/zip'); }
