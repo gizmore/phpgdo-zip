@@ -21,7 +21,7 @@ final class Admin extends MethodForm
 
 	use MethodAdmin;
 
-	public function createForm(GDT_Form $form): void
+	protected function createForm(GDT_Form $form): void
 	{
 		$form->addFields(
 			GDT_AntiCSRF::make(),
